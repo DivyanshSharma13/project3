@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid; 
+    place-items: center; 
+    background-color:gray;
+}
+.container{
+    height:780px ;
+    width: 727px;
+    background-color:rgb(204, 201, 201);
+    border-radius: 10px;
+    margin-top: 15px;
+    
+}
+.header h1{
+    padding: 23px;
+}
+
+.Form-Content{
+    width:600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(9,1fr);
+    row-gap: 30px;
+    margin-top: 15px;
+    column-gap: 130px;
+    padding: 0 25px;
+}
+.dba{
+    height: 80px;
+    place-content: center;
+}
+.box5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+.text input,select{
+    padding: 8px;
+    width:144%;
+    border-radius: 7px;
+    border-style: solid;
+    cursor: pointer;
+}
+.text.name5{
+    width: 81%;
+}
+.text input:focus{
+    outline: none;
+    border-style: none;
+    border-color: red;
+    border:1px solid red;
+}
+.text select:focus{
+    outline: none;
+    border-style: none;
+    border-color: red;
+    border:1px solid red;
+    background-color:rgba(29, 21, 21, 0.699);
+    color: white;
+}
+.name5 input{
+    height: 95px;
+}
+.box6,.box7{
+    margin-top:8px;
+}
+footer{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: -90px;
+    justify-content: end;
+}
+footer button{
+    padding: 10px;
+    font-size: 19px;
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 145px;
+}
